@@ -41,25 +41,20 @@
     
     <div class="centered-block">
     <script>
-        // Array met verschillende quotes
         var quotes = [
             "Dit is de eerste quote.",
             "Dit is de tweede quote.",
             "Dit is de derde quote."
         ];
 
-        // Elementen ophalen
         var quoteContainer = document.getElementById("quote-container");
         var quoteElement = document.getElementById("quote");
 
-        // Functie om de quote te wisselen
         function wisselQuote() {
             var willekeurigeIndex = Math.floor(Math.random() * quotes.length);
             var willekeurigeQuote = quotes[willekeurigeIndex];
             quoteElement.textContent = willekeurigeQuote;
         }
-
-        // Wissel de quote elke 3 seconden (3000 milliseconden)
         setInterval(wisselQuote, 7000);
     </script>
     </div>
