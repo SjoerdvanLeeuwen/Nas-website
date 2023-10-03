@@ -4,40 +4,72 @@
          url(css/Algerian.woff) format('woff');
 }
 
-   body {
+body {
     min-height: 100vh;
     margin: 0;
-   }
+}
 
-   main {
-        background-image: url('queensbridge.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        justify-content: center;
-        align-items: center;
-        background-attachment: fixed; 
-        display: flex;
-        min-height: 100vh;
-    }
-    
-    header, footer {
-        background-color: #5C0029;
-        margin: 0;
-        padding: 1em;
-        height: 7em;
-    }
-    
-    header {
-        display: flex; 
-        align-items: center; 
-        justify-content: space-between;
-    }
+body.over-nas {
+    min-height: 200vh; 
+}
 
-    footer {
+main {
+    background-image: url('queensbridge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed; 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
-    }
+header, footer {
+    background-color: #5C0029;
+    margin: 0;
+    padding: 1em;
+    height: 7em;
+}
 
-   .navstyle ul {
+header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #5C0029;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav li {
+    flex: 1;
+    margin: 0;
+    transition: transform 0.3s;
+}
+
+.footer-nav li:hover {
+    transform: translateY(0.5em);
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #f6ece2;
+    font-weight: bold;
+    font-size: 2em;
+    display: block; 
+}
+
+.navstyle ul {
     list-style: none;
     text-align: justify;
     padding: 0;
@@ -55,12 +87,20 @@
     float: right;
 }
 
+.navstyle li:hover a {
+    color: #c29d4c;
+}
+
+.navstyle li a {
+    transition: color 0.3s; 
+}
+
 .navstyle a {
     text-decoration: none; 
     font-size: 2.1875em; 
     flex-direction: row;
     font-family: Algerian;
-    color: #f6ece2
+    color: #f6ece2;
 }
 
 h1 {
@@ -69,48 +109,172 @@ h1 {
     margin-top: 0.625em;
     margin-bottom: 0.625em;
     flex-grow: 1;
-    color: #f6ece2
-}
-h2 {
-    font-family: Algerian;
-    margin-left: 3.8em;
-    flex: 1; 
-    font-size: 3.125em;
-    color: #f6ece2
+    color: #f6ece2;
 }
 
-section {
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inleiding {
     display: flex;
     align-items: center;
     flex: 1; 
     padding: 1.25em;
     justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    width: 50%;
 }
 
-.nas-hoofdpagina-afbeelding {
-    max-width: 70%; 
-    border: solid 1em #5C0029;
-    border-radius: 1em;
+h2 {
+    font-family: Algerian;
+    flex: 1; 
+    font-size: 3.125em;
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
 }
 
 .text-content {
-        max-width: 80%; 
-        margin-left: 6.25em; 
-        margin-bottom: 2.5em;
-        flex: 1; 
-        padding: 1.25em;
-        font-size: 1.5625em;
-        font-weight: bold;
-        color: #f6ece2;
-        text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000; 
+    margin-bottom: 2.5em;
+    flex: 1; 
+    font-size: 1.5625em;
+    font-weight: bold;
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000; 
 }
 
-.centered-block
- {
-    border: solid 1em #c29d4c;
-    border-radius: 1em;
- }
+.inleiding div {
+    padding: 1.25em;
+    text-align: left;
+}
 
 .nas-hoofdpagina {
-    max-width: 70%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.nas-hoofdpagina-afbeelding { 
+    width: 65%; 
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0; 
+    border-radius: 1.5em;
+}
+
+.quote {
+    text-align: center;
+    margin-top: 1.25em; 
+    margin-bottom: 3em; 
+}
+
+.quote q {
+    color: #f6ece2;
+    font-size: 1.5625em;
+    font-weight: bold;
+    text-shadow: 0.0825em 0.0825em 0 #93552c, -0.0625em -0.0625em 0 #93552c;
+}
+
+.over-nas .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.over-nas .inleiding {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    padding: 1.25em;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+    width: 50%;
+    margin-bottom: 2em; 
+}
+
+.over-nas .inleiding div {
+    padding: 1.25em;
+    text-align: left;
+    width: 100%; 
+}
+
+.over-nas .over-nas-afbeelding {
+    max-width: 80%; 
+    height: auto;
+    margin-top: 1em; 
+    border-radius: 1.5em;
+}
+
+.over-nas h2 {
+    font-family: Algerian;
+    font-size: 3.125em;
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
+    margin-top: 0.625em; 
+    margin-bottom: 0.625em; 
+}
+
+.over-nas .text-content {
+    font-size: 1.5625em;
+    font-weight: bold;
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
+    text-align: left; 
+    padding: 1em; 
+}
+
+.nummer-intro {
+    text-decoration: none;
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
+    font-size: 1.5em;
+    margin: 0 auto; 
+    max-width: 30em; 
+    font-weight: bold;
+    display: block;
+    text-align: center; 
+    margin-bottom: 4em; 
+}
+
+.nummers-lijst {
+    list-style: none;
+    padding: 0;
+}
+
+.nummers-lijst li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25em;
+    flex-direction: column;
+}
+
+.nummers-lijst a {
+    text-decoration: none;
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
+    font-size: 1.75em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nummers-lijst a:hover {
+    color: #c29d4c;
+}
+
+.nummers-lijst img {
+    width: 10em; 
+    height: 10em; 
+    border-radius: 50%;
+    margin-bottom: 3.5em;
 }

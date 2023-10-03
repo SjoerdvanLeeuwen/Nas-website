@@ -6,61 +6,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header">
         <h1 class="h1">Nas</h1>
         <nav class="navstyle">
             <ul class="navstyle">
                 <li><a href="#">Albums</a></li>
-                <li><a href="#">Nummers</a></li>
-                <li><a href="#">Over</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="Nummer.html">Nummers</a></li>
+                <li><a href="OverNas.html">Over</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <div>
-                <h2 class="h2">Nas home</h2>
-                <p class="text-content"> 
-                    Welkom op de officiële website gewijd aan een van de meest invloedrijke en gerespecteerde namen in de wereld van de hiphop: Nas. Stap in de boeiende wereld van deze legendarische rapper, woordkunstenaar en verhalenverteller. Hier vind je alles wat je moet weten over zijn leven, zijn muziek, zijn impact op de rapcultuur en nog veel meer. Duik in de diepte van Nas' teksten, ontdek de betekenis achter zijn meest iconische tracks en volg zijn reis van de straten van Queensbridge naar de internationale erkenning als een van de grootste namen in de rapgeschiedenis. 
-                </p>
-            </div>
+        <section class="content">
+            <article class="inleiding">
+                <div>
+                    <h2 class="h2">Nas home</h2>
+                    <p class="text-content"> 
+                        Welkom op de officiële website gewijd aan een van de meest invloedrijke en gerespecteerde namen in de wereld van de hiphop: Nas. Stap in de boeiende wereld van deze legendarische rapper, woordkunstenaar en verhalenverteller. Hier vind je alles wat je moet weten over zijn leven, zijn muziek, zijn impact op de rapcultuur en nog veel meer. Duik in de diepte van Nas' teksten, ontdek de betekenis achter zijn meest iconische tracks en volg zijn reis van de straten van Queensbridge naar de internationale erkenning als een van de grootste namen in de rapgeschiedenis. 
+                    </p>
+                </div>
+            </article>
+            
+            <article class="nas-hoofdpagina">
+                <img src="css/nasfoto.png" alt="Nas-hoofdpagina" class="nas-hoofdpagina-afbeelding">
+            </article>
         </section>
-    
-        <section>
-            <img src="c:\Users\Sjoer\OneDrive\Bureaublad\VSC\cssassets\nasfoto.png" alt="Nas-hoofdpagina" class="nas-hoofdpagina-afbeelding">
+
+        <section class="quote">
+            <article>
+                <q>I never sleep, ’cause sleep is the cousin of death. NY State of Mind - Ilmatic</q>
+            </article>
         </section>
     </main>
 
-    <div
-        id="quote-container">
-        <p id="quote">Dit is een standaardquote.</p>
-    </div>
-    
-    <div class="centered-block">
-    <script>
-        var quotes = [
-            "Dit is de eerste quote.",
-            "Dit is de tweede quote.",
-            "Dit is de derde quote."
-        ];
-
-        var quoteContainer = document.getElementById("quote-container");
-        var quoteElement = document.getElementById("quote");
-
-        function wisselQuote() {
-            var willekeurigeIndex = Math.floor(Math.random() * quotes.length);
-            var willekeurigeQuote = quotes[willekeurigeIndex];
-            quoteElement.textContent = willekeurigeQuote;
-        }
-        setInterval(wisselQuote, 7000);
-    </script>
-    </div>
-
     <footer>
-        <p> 2023 Mijn NAS-Website</p>
+        <ul class="footer-nav">
+            <li><a>Mijn Nas website 2023</a></li>
+            <li><a href="https://open.spotify.com/artist/20qISvAhX20dpIbOOzGK3q?si=jPtrhqVaTwCboZwXdlouCg">Spotify link</a></li>
+            <li><a href="mailto:voorbeeld@email.com">naswebsite@email.com</a></li>
+            <li><a href="tel:+123456789">+123456789</a></li>
+        </ul>
     </footer>
 </body>
 </html>
