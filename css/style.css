@@ -10,7 +10,7 @@ body {
 }
 
 body.over-nas {
-    min-height: 200vh; 
+    min-height: 150vh; 
 }
 
 main {
@@ -92,12 +92,12 @@ footer {
 }
 
 .navstyle li a {
-    transition: color 0.3s; 
+    transition: color 0.3s;
 }
 
 .navstyle a {
-    text-decoration: none; 
-    font-size: 2.1875em; 
+    text-decoration: none;
+    font-size: 2.1875em;
     flex-direction: row;
     font-family: Algerian;
     color: #f6ece2;
@@ -277,4 +277,88 @@ h2 {
     height: 10em; 
     border-radius: 50%;
     margin-bottom: 3.5em;
+}
+
+.vertical-line {
+    top: 24em;
+    width: 0.5em; 
+    height: 222em; 
+    background-color: #5C0029; 
+    position: fixed; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    position: absolute;
+    border-radius: 30%;
+}
+
+.album-timeline li:nth-child(even) {
+    flex-direction: row-reverse; 
+}
+
+.album-timeline li:nth-child(odd) {
+    flex-direction: row; 
+}
+
+.album-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.album-timeline li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.album-left img {
+    width: 9.375em; 
+    height: auto;
+    border-radius: 5px;
+    margin-right: 1em; 
+}
+
+.album-right {
+    flex: 1;
+    margin-left: 1em; 
+    margin-right: 1em; 
+}
+
+.album-left {
+    flex: 1;
+    margin-left: 1em; 
+    margin-right: 1em; 
+}
+
+.album-left h3 {
+    font-size: 1.43em;
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
+}
+
+.album-left p {
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
+    font-size: 0.75em;
+}
+
+.album-right h3 {
+    font-size: 1.43em;
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
+}
+
+.album-right p {
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
+    font-size: 0.75em;
+}
+
+.bronvermelding {
+    font-family: Algerian;
+    flex: 1; 
+    font-size: 2.125em;
+    color: #f6ece2;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
 }
