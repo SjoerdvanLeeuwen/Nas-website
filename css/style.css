@@ -1,7 +1,7 @@
 @font-face {
     font-family: Algerian;
-    src: url(css/Algerian.woff2) format('woff2'),
-         url(css/Algerian.woff) format('woff');
+    src: url(../csselementen/Algerian.woff2) format('woff2'),
+         url(../csselementen/Algerian.woff) format('woff');
 }
 
 body {
@@ -14,7 +14,7 @@ body.over-nas {
 }
 
 main {
-    background-image: url('queensbridge.jpg');
+    background-image: url('../csselementen/queensbridge.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
@@ -127,6 +127,7 @@ h1 {
     flex-direction: row;
     text-align: center;
     width: 50%;
+    margin-left: 2em;
 }
 
 h2 {
@@ -151,36 +152,30 @@ h2 {
     text-align: left;
 }
 
-.nas-hoofdpagina {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    width: 50%;
-}
-
 .nas-hoofdpagina-afbeelding { 
-    width: 65%; 
+    width: 35%; 
     max-width: 100%; 
     height: auto;
-    display: block;
-    margin: 0; 
+    display: flex;
+    margin: 0;
     border-radius: 1.5em;
+    margin-right: 4em;
 }
 
-.quote {
+q {
     text-align: center;
     margin-top: 1.25em; 
     margin-bottom: 3em; 
-}
-
-.quote q {
     color: #f6ece2;
     font-size: 1.5625em;
     font-weight: bold;
     text-shadow: 0.0825em 0.0825em 0 #93552c, -0.0625em -0.0625em 0 #93552c;
+}
+
+.over-h2 {
+    font-size: 5em;
+    margin: 1;
+    text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
 }
 
 .over-nas .content {
@@ -362,3 +357,14 @@ h2 {
     color: #f6ece2;
     text-shadow: 0.0625em 0.0625em 0 #000000, -0.0625em -0.0625em 0 #000000;
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
